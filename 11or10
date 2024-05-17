@@ -1,0 +1,30 @@
+def SUMMA_CISEL(st,  ):
+    l = st.split
+    digits, z, sum = [], "", 0
+    for i in l:
+        for j in i:
+            if j in "0123456789":
+                z = z + j
+        digits.append(int(z))
+        z = ""
+
+    for x in digits:
+        sum+=x
+
+    return sum
+
+#print(SUMMA_CISEL(input()))
+st = input()
+l = st.split
+digits, z, sum = [], "", 0
+
+for i in l:
+    for j in i:
+        if j in "0123456789":
+            z = z + j
+    digits.append(int(z))
+    z = ""
+'''''
+    for x in digits:
+        sum+=x
+'''
